@@ -10,19 +10,16 @@ function App() {
     <>
       <Routes>
         {/**Public pages */}
-       
-        <Route path="/" element={<DefaultLayout/>} 
-        
-        />
-       
+
+        <Route path="/" element={<DefaultLayout />}>
+          
+        </Route>
 
         {/**Private pages */}
-        
-          <Route path="/user" element={<UserLayout/>} >
-          <Route path="/dashboard" element={<Dashboard/>}></Route>
-          </Route>
-          
-       
+
+        <Route path="/user" element={<UserLayout />}>
+          <Route path="dashboard" element={<Dashboard />}></Route>
+        </Route>
       </Routes>
     </>
   );
