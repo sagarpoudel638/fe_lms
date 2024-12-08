@@ -7,7 +7,7 @@ import { faHouse, faChartLine } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   return (
-    <>
+    <header>
       <Navbar expand="md" className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#home">LMS</Navbar.Brand>
@@ -24,7 +24,7 @@ const Header = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </>
+    </header>
   )
 }
 
